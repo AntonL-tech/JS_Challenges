@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="col__inner">
+            <div class="header__innder">
+                 <h2 class="header_title_game1">Challenge 1: Your Age in Days</h2>
+            </div>
+            <div class="btns">
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+            <div id="result"></div>
+        </div>
+
+        <div class="challenge">
+            <div class="header__innder">
+                <h2>Challenge 2: Cat Generator</h2>
+            </div>
+            <div class="btns btns--2">
+                <button type="button" class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+                <button type="button" class="btn btn-danger" onclick="resetCat()">Delete Cat</button>
+            </div>
+            
+            <div class="cat__inner" id="cat-gang">
+
+            </div>
+        </div>
+
+        <div class="challenge">
+            <div class="header__innder">
+                <h2>Challenge 3: Rock Paper Scisoors</h2>
+            </div>
+            <div class="game__inner" id="game">
+
+                    <img class="game__photo" src="images/rock.jpg" alt="" id="rock" onclick="rpsGame(this)">
+
+                    <img class="game__photo" src="images/paper.png" alt="" id="paper" onclick="rpsGame(this)">
+
+                    <img class="game__photo" src="images/scissor.jpg" alt="" id="scissors" onclick="rpsGame(this)">
+            </div>
+        </div>
+
+        <div class="challenge">
+            <div class="header__inner">
+                <h2>Challenge 4: Change the color of all Buttons</h2>
+            </div>
+            
+            <div class="btns__inner">
+
+                <form action="#" method="post">
+                    <select name="backdrop" id="back__color" onchange="buttonColorChange(this)">
+                        <option selected value="random">Random</option>
+                        <option value="green">Green</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="reset">Reset</option>
+                    </select>
+
+                </form>
+
+                <button type="button" class="btn btn-primary">Wee!</button>
+                <button type="button" class="btn btn-danger">Yahoo!</button>
+                <button type="button" class="btn btn-warning">Google!</button>
+                <button type="button" class="btn btn-success">Facebook!</button>
+
+            </div> <!--/.btns__inner-->
+            
+        </div> <!--/.challenge-->
+
+        <div class="challenge">
+            <div class="header__inner">
+                <h2 class="header__title">Challenge 5: Blackjack</h2>
+                <h3 class="header__subtitle"><span id="blackjack-result">Let's play</span></h3>
+            </div>
+
+            <div class="flex-blackjack__inner">
+                <div class="flex-blackjack-row-1">
+                    <div class="blackjack_item" id="your-box">
+                        <h2 class="blackjack_text">You: <span id="your-blackjack-result">0</span></h2>
+                    </div>
+
+                    <div class="blackjack_item" id="dealer-box">
+                        <h2 class="blackjack_text">Dealer: <span id="dealer-blackjack-result">0</span></h2>
+                    </div>
+                </div>
+
+                <div class="flex-blackjack-row-2">
+                    <div class="blackjack-btns">
+                        <button type="button" class="btn btn-primary blackjack__btn" id="blackjack-hit-button">Hit</button>
+                        <button type="button" class="btn btn-warning blackjack__btn" id="blackjack-stand-button">Stand</button>
+                        <button type="button" class="btn btn-danger blackjack__btn" id="blackjack-deal-button">Deal</button>
+                    </div>
+                </div>
+                <div class="flex-blackjack-row-3">
+                    <table>
+                        <tr>
+                            <th>Wins</th>
+                            <th>Loses</th>
+                            <th>Draws</th>
+                        </tr>
+                        <tr>
+                            <td><span id="wins">0</span></td>
+                            <td><span id="losses">0</span></td>
+                            <td><span id="draws">0</span></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div> <!--/.flex-blackjack__inner-->
+        </div> <!--/.challenge-->
+
+    </div> <!--/.container-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

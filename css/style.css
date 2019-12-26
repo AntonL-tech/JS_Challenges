@@ -1,0 +1,148 @@
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.col__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+
+    border: solid 1px  black;
+}
+.btns {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.btns--2 {
+    border-bottom: solid 1px  black;
+}
+
+#result {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-top: solid 1px  black;
+
+}
+
+.challenge {
+    width: 75%;
+    border: solid 1px  black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-top: 0;
+}
+.header__inner {
+    text-align: center;
+    width: 100%;
+    border-bottom: solid 1px  black;
+}
+
+.cat__inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.cat__item {
+    width: 33%;
+    padding: 15px 15px;
+}
+
+.cat__photo {
+    width: 250px;
+    box-shadow: 0 0 5px gray;
+    transition: box-shadow .2s linear;
+}
+.cat__photo:hover {
+    box-shadow: 0 0 15px black;
+}
+
+.game__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 0;
+
+}
+
+
+.game__photo {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: box-shadow .2s linear;
+}
+.game__photo:hover {
+    box-shadow: 0 0 15px blue;
+}
+
+.btns__inner {
+    padding: 30px 15px;
+    width: 100%;
+    border-top: solid 1px  black;
+    display: flex;
+    justify-content: space-around;
+}
+.flex-blackjack__inner {
+    width: 100%;
+    background: url("https://i.ebayimg.com/images/g/3oYAAOSw9sdd0tbW/s-l800.jpg");
+    background-size: cover;
+}
+.flex-blackjack-row-1 {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+}
+.blackjack_item {
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    border: solid 1px black;
+}
+.blackjack_item:first-child {
+    border-right: solid 1px black;
+}
+.blackjack_text {
+    color: white;
+}
+.flex-blackjack-row-2 {
+    width: 100%;
+    border-top: solid 1px black;
+    padding: 30px ;
+    display: flex;
+    justify-content: center;
+}
+.blackjack-btns {
+    padding: 15px;
+    border: solid 1px black;
+}
+.blackjack__btn {
+    margin-right: 15px;
+}
+.blackjack__btn:last-child {
+    margin-right: 0px;
+}
+.flex-blackjack-row-3 {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+th, td {
+    border: solid 1px black;
+    padding: 10px;
+}
+.blackjack_card {
+    width: 100px;
+    height: 130px;
+    margin: 0 10px 10px 0;
+}
